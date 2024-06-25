@@ -1,6 +1,6 @@
 This repo demonstrates how someone can implement **fullstack type safety** using:
 
-- [Next.js](https://nextjs.org/) (especially [server action](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations))
+- [Next.js](https://nextjs.org/) (especially [server actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations))
 - [React Query](https://tanstack.com/query/latest) (for data fetching, caching, and synchronization)
 - [zod](https://zod.dev/) (for input/output validation in API endpoints #goodpractice)
 
