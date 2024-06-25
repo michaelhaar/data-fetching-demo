@@ -8,8 +8,8 @@ const userParamsSchema = z.object({
 });
 type GetUserParams = z.infer<typeof userParamsSchema>;
 
-export async function getUser(params: GetUserParams) {
-  const { email, password } = userParamsSchema.parse(params);
+export async function getUser(unsafeParams: GetUserParams) {
+  const { email, password } = userParamsSchema.parse(unsafeParams);
 
   // simulate a db call
   await new Promise((resolve) => setTimeout(resolve, 1000));
