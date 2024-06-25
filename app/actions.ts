@@ -5,7 +5,8 @@ type GetUserParams = {
   password: string;
 };
 
-export const getUser = async ({ email, password }: GetUserParams) => {
-  // make a db call
-  return { name: "Michi" };
-};
+export async function getUser({ email, password }: GetUserParams) {
+  // simulate a db call
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  return { name: "Michi", email: "michi@asdf.at" };
+}
